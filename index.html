@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aladin Dangote | Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #000; /* solid black background */
+    color: #E6ECF3;
+  }
+  .brand-font { font-family: 'Poppins', sans-serif; }
+  .glass {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .hero-bg {
+    background: url('https://via.placeholder.com/1200x600.png?text=Aladin+Dangote') center/cover no-repeat;
+  }
+  .accent { color: #C8A845; }
+  .glass-btn {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+</style>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 bg-black/30 backdrop-blur-xl transition-all">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="uklogo.png" class="w-10 h-10 rounded-full border border-white/20" />
+      <span class="font-extrabold text-lg brand-font">Aladin Dangote</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-semibold">
+      <a href="#about" class="hover:text-[#C8A845]">About</a>
+      <a href="#services" class="hover:text-[#C8A845]">Services</a>
+      <a href="#contact" class="hover:text-[#C8A845]">Contact</a>
+    </div>
+    <button id="menuBtn" class="md:hidden">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
+    <div class="glass rounded-2xl p-6 space-y-4 text-sm font-semibold">
+      <a href="#about" class="block">About</a>
+      <a href="#services" class="block">Services</a>
+      <a href="#performances" class="block">Performances</a>
+      <a href="#contact" class="block">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<!-- HERO -->
+<section class="px-6 pt-36 pb-24 relative">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+
+    <!-- LEFT: Text -->
+    <div>
+      <h1 class="text-4xl md:text-6xl xl:text-7xl font-extrabold brand-font mb-6">
+        Aladin<br><span class="accent">Dangote</span>
+      </h1>
+      <p class="text-lg text-slate-300 max-w-xl mb-10">
+        Multi-talented artist blending music, dance, and live performances to create unforgettable experiences.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="px-8 py-4 rounded-xl text-lg font-bold text-white" style="background:#356D39">Book Now</a>
+        <a href="#services" class="px-8 py-4 rounded-xl text-lg font-semibold border border-[#C8A845] text-[#C8A845]">My Services</a>
+      </div>
+    </div>
+
+ <!-- RIGHT: Hero Image (Fade Carousel) -->
+<div class="relative flex justify-center lg:justify-end h-80 md:h-96 lg:h-[28rem] overflow-hidden rounded-3xl shadow-2xl border border-white/10">
+
+  <img src="heroo.jpg"
+       class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
+       alt="Aladin Dangote Hero Image 1">
+
+  <img src="uk4.jpeg"
+       class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+       alt="Aladin Dangote Hero Image 2">
+
+</div>
+
+
+
+
+
+  </div>
+</section>
+
+
+
+<!-- ABOUT -->
+<section id="about" class="px-6 py-28 bg-black relative overflow-hidden">
+  <!-- brighter branded overlay -->
+  <div class="absolute inset-0">
+    <div class="w-full h-full bg-gradient-to-r from-[#C8A845]/30 to-transparent pointer-events-none"></div>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold brand-font mb-6">About Aladin Dangote</h2>
+    <p class="text-slate-300 text-lg">
+      Aladin Dangote is a talented musician, choreographer, M.C, and event planner. With years of experience performing on stage and producing music content, he brings energy, creativity, and precision to every project.
+    </p>
+  </div>
+</section>
+
+
+<!-- PERFORMANCE / ADVERT CAROUSEL -->
+<section id="carousel" class="px-6 py-28">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-extrabold brand-font text-center mb-10">
+      ADVERT
+    </h2>
+
+    <!-- SQUARE CAROUSEL CONTAINER -->
+    <div class="relative aspect-square w-full max-w-xl mx-auto overflow-hidden rounded-3xl glass border border-white/20">
+
+      <!-- Slides Wrapper -->
+      <div id="advertCarousel"
+           class="absolute inset-0 flex transition-transform duration-700 ease-in-out">
+
+        <!-- Slide -->
+        <div class="min-w-full h-full flex items-center justify-center">
+          <img src="uklogo.png"
+               class="max-w-full max-h-full object-contain"
+               alt="Advert 1">
+        </div>
+
+        <div class="min-w-full h-full flex items-center justify-center">
+          <img src="1 (2).png"
+               class="max-w-full max-h-full object-contain"
+               alt="Advert 2">
+        </div>
+
+        <div class="min-w-full h-full flex items-center justify-center">
+          <img src="1 (3).png"
+               class="max-w-full max-h-full object-contain"
+               alt="Advert 3">
+        </div>
+
+        <div class="min-w-full h-full flex items-center justify-center">
+          <img src="1 (4).png"
+               class="max-w-full max-h-full object-contain"
+               alt="Advert 4">
+        </div>
+
+        <div class="min-w-full h-full flex items-center justify-center">
+          <img src="1 (5).png"
+               class="max-w-full max-h-full object-contain"
+               alt="Advert 5">
+        </div>
+
+        <div class="min-w-full h-full flex items-center justify-center">
+          <img src="1 (6).png"
+               class="max-w-full max-h-full object-contain"
+               alt="Advert 6">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Navigation Buttons -->
+      <button class="prev absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl opacity-80 hover:opacity-100">
+        ‹
+      </button>
+      <button class="next absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl opacity-80 hover:opacity-100">
+        ›
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="px-6 py-28">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold brand-font mb-16">My Services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Each service card -->
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk.jpeg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">Master of Ceremonies</h3>
+            <p class="text-slate-300 text-sm mb-4">Professional M.C services for energetic and smooth events.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk2.jpeg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">DJ Services</h3>
+            <p class="text-slate-300 text-sm mb-4">Spinning tracks to elevate your event’s vibe and energy.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk3.jpg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">Cheoreography</h3>
+            <p class="text-slate-300 text-sm mb-4">Creative dance routines for performances and videos.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk4.jpeg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">Music Performance</h3>
+            <p class="text-slate-300 text-sm mb-4">Live music performances with unmatched stage presence.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk.jpeg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">Event Planning</h3>
+            <p class="text-slate-300 text-sm mb-4">Organizing memorable events from start to finish.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk2.jpeg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">Decoration</h3>
+            <p class="text-slate-300 text-sm mb-4">Stylish decorations that transform venues visually.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk4.jpeg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">Jingle</h3>
+            <p class="text-slate-300 text-sm mb-4">Creative, immersive, and themed event experiences.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+      <div class="glass rounded-2xl overflow-hidden shadow-lg flex flex-col">
+        <img src="uk3.jpg" class="h-44 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold mb-3 text-[#C8A845]">Advert & Media Promotion</h3>
+            <p class="text-slate-300 text-sm mb-4">Strategic promotion to maximize visibility for brands and events.</p>
+          </div>
+          <a href="https://wa.link/b9s09w" class="mt-auto px-4 py-2 rounded-xl bg-[#C8A845] text-black font-semibold hover:bg-yellow-500 transition">
+            Book Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-6 py-28 bg-black relative overflow-hidden">
+  <!-- brighter branded overlay -->
+  <div class="absolute inset-0">
+    <div class="w-full h-full bg-gradient-to-r from-[#C8A845]/30 to-transparent pointer-events-none"></div>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto">
+    <h2 class="text-4xl font-extrabold brand-font text-center mb-6">Contact Aladin Dangote</h2>
+    <div class="glass rounded-3xl p-10 space-y-6 text-lg">
+      <div class="flex items-center gap-4">
+        <i class="fas fa-phone-alt text-[#C8A845] text-xl"></i>
+        <p><a href="tel:+2348034361458" class="hover:underline">08064969673</a></p>
+      </div>
+      <div class="flex items-center gap-4">
+        <i class="fab fa-whatsapp text-[#25D366] text-2xl"></i>
+        <p><a href="https://wa.link/b9s09w" target="_blank" class="hover:underline">08064969673</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA HANDLES -->
+<section id="media" class="px-6 py-28 bg-white relative overflow-hidden">
+  <div class="relative max-w-5xl mx-auto text-center">
+    <h4 class="text-4xl font-extrabold brand-font mb-10 text-black">
+      Follow / Connect with Aladin Dangote
+    </h4>
+
+    <div class="flex flex-wrap justify-center items-center gap-8 text-3xl">
+
+      <!-- YouTube -->
+      <a href="#" target="_blank"
+         class="text-[#FF0000] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fab fa-youtube"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="#" target="_blank"
+         class="text-[#E1306C] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- TikTok -->
+      <a href="#" target="_blank"
+         class="text-[#000000] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a href="#" target="_blank"
+         class="text-[#1877F2] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fab fa-facebook"></i>
+      </a>
+
+      <!-- Audiomack -->
+      <a href="#" target="_blank"
+         class="text-[#FF6E00] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fab fa-audiomack"></i>
+      </a>
+
+      <!-- Spotify -->
+      <a href="#" target="_blank"
+         class="text-[#1DB954] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fab fa-spotify"></i>
+      </a>
+
+      <!-- Twitter / X -->
+      <a href="#" target="_blank"
+         class="text-[#1DA1F2] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fab fa-twitter"></i>
+      </a>
+    <!-- Email -->
+      <a href="mailto:aladin@example.com" target="_blank"
+         class="text-[#C8A845] hover:scale-110 hover:shadow-lg transition transform duration-300">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+
+    <p class="text-gray-600 text-sm mt-8">
+      Click any icon to visit Aladin’s social media profiles.
+    </p>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="px-6 py-16 border-t border-white/10 text-center text-sm text-slate-400">
+  <p>© 2026 Aladin Dangote · All Rights Reserved</p>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.link/b9s09w" target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-20 right-5 z-50 w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-105 transition" style="background:#25D366">
+  <i class="fab fa-whatsapp text-white text-2xl"></i>
+</a>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.getElementById("advertCarousel");
+    const slides = carousel.children;
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }, 4000);
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".hero-slide");
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove("opacity-100");
+      slides[index].classList.add("opacity-0");
+
+      index = (index + 1) % slides.length;
+
+      slides[index].classList.remove("opacity-0");
+      slides[index].classList.add("opacity-100");
+    }, 4000);
+  });
+</script>
+</body>
+</html>
